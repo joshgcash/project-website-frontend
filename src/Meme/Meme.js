@@ -78,7 +78,11 @@ export const Meme = () => {
         Skip
       </button>
       {captions.map((c, index) => (
-        <input onChange={(e) => updateCaption(e, index)} key={index} />
+        <input
+          placeholder="input caption here"
+          onChange={(e) => updateCaption(e, index)}
+          key={index}
+        />
       ))}
       <img alt="meme" src={memes[memeIndex].url} />
     </div>
